@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Страница 2</title>
+</head>
+<body>
+    
+    <button id="resetBtn">Reset</button>
+    <div class="container">
+        <div class="plaer1">Your</div>
+        <div class="buk"></div>
+        <div class="num"></div>
+        <div class="desk"></div>
+    </div>
+    <button class="start">Ready</button>
+    <div class="cont">
+        <div class="plaer2">Friend</div>
+        <div class="bukvi"></div>
+        <div class="numer"></div>
+        <div class="desks"></div>
+        </div>
+
+        <div   id="ship1" class="ship"draggable="true" ondragstart="dragStart(event)" >
+            <div class="ship_part ship_1"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="ship_part ship_2"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="ship_part ship_3"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="ship_part ship_4"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="count" id="cnt1">X1</div>
+            </div>
+            <div  id="ship2" class="ship" draggable="true" ondragstart="dragStart(event)" >
+            <div class="ship_part ship_1"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="ship_part ship_2"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="ship_part ship_3"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="count"id="cnt2">X2</div>
+            </div> 
+            <div  id="ship3" class="ship"   draggable="true" ondragstart="dragStart(event)" >
+            <div class="ship_part ship_1"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="ship_part ship_2"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="count"id="cnt3">X3</div>    
+            </div>
+            <div  id="ship4" class="ship" draggable="true" ondragstart="dragStart(event)" >
+            <div class="ship_part ship_1"  style="width: 30px; height: 30px; background-color: rgb(31, 27, 27);"></div>
+            <div class="count"id="cnt4">X4</div>    
+            </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

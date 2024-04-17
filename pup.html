@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 40px);
+            grid-template-rows: repeat(10, 40px);
+            gap: 2px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .grid button {
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: #1852FF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .grid button:hover {
+            background-color: #0a3cbf;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script>
+        const { useState } = React;
+
+        function App() {
+            const [gridContent, setGridContent] = useState(Array.from({ length: 10 }, (_, index) => Array.from({ length: 10 }, (_, innerIndex) => `${index}${String.fromCharCode(innerIndex + 97)}`)));
+
+            
+
+            return (
+                React.createElement('div', { className: 'grid-container' },
+                    gridContent.map((row, rowIndex) => (
+                        row.map((cell, cellIndex) => (
+                            React.createElement('button', {
+                                key: `${rowIndex}-${cellIndex}`,
+                                
+                            }, cell)
+                        ))
+                    ))
+                )
+            );
+        }
+
+        ReactDOM.render(React.createElement(App), document.getElementById('root'));
+    </script>
+</body>
+</html>

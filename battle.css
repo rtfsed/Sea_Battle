@@ -1,0 +1,115 @@
+html {
+    margin: 0;
+    height: 100vh;
+}
+body {
+    overflow-x: hidden; /* Убрать горизонтальный скролл */
+    overflow-y: hidden; /* Убрать вертикальный скролл */
+}
+.desk {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+      vertical-align: top;
+    top: 50%;
+    left: 45%;
+    width: 330px;
+    height: 100%;
+}
+
+.desk button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+}
+.buk{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 140px;
+    top: 20px;
+    letter-spacing: 8px;
+    overflow: hidden;
+}
+
+.desks {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+      vertical-align: top;
+    top: 50%;
+    left: 45%;
+    width: 330px;
+    height: 100%;
+}
+
+.desks button {
+    width: 30px;
+    height: 30px;
+    
+}
+.bukvi{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 140px;
+    
+    top: 20px;
+    letter-spacing: 8px;
+    overflow: hidden;
+}
+.container, .cont {
+    display: inline-block;
+    vertical-align: top; 
+    width: 40%; 
+    box-sizing: border-box; 
+}
+.plaer1{
+    position: relative;
+    left: 420px;
+}
+.plaer2{
+    position: relative;
+    left: 420px;
+}
+#ship1{
+    display: flex; 
+    flex-direction: row; 
+    width: 150px;
+    height: 30px; 
+    position: static;
+}
+#ship2{
+    margin-top: 15px;
+    display: flex; 
+    flex-direction: row; 
+    width: 130px;
+    height: 30px; 
+    position: static;
+}
+#ship3{
+    margin-top: 15px;
+    display: flex; 
+    flex-direction: row; 
+    width: 150px;
+    height: 30px; 
+    position: static;
+}
+#ship4{
+    margin-top: 15px;
+    display: flex; 
+    flex-direction: row; 
+    width: 150px;
+    height: 30px; 
+    position: static;
+}
+.start{
+    position: relative;
+    left: 100px;
+}
